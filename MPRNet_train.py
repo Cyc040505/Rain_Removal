@@ -163,7 +163,7 @@ def train_model():
 
         # 打印训练和验证结果
         print(f"Train PSNR: {avg_train_psnr:.2f}\tVal PSNR: {psnr_val_rgb:.2f} \tLoss: {epoch_loss:.4f}")
-        print(f"Time: {time.time() - epoch_start_time}\tBest Val PSNR: {best_psnr:.2f}(Epoch {best_epoch})")
+        print(f"Time: {time.time() - epoch_start_time:.2f}\tBest Val PSNR: {best_psnr:.2f}(Epoch {best_epoch})")
         columns = os.get_terminal_size().columns
         print("=" * columns)
 
