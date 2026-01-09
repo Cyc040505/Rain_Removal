@@ -198,7 +198,7 @@ if __name__ == '__main__':
 
     # 训练
     VAL_AFTER_EVERY = 1
-    SAVE_AFTER_EVERY = 50
+    SAVE_AFTER_EVERY = 10
     RESUME = False
     WARMUP_EPOCHS = 3
     TRAIN_PS = 128
