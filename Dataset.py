@@ -11,18 +11,19 @@ def is_image_file(filename):
     return any(filename.endswith(extension) for extension in ['jpeg', 'JPEG', 'jpg', 'png', 'JPG', 'PNG', 'gif'])
 
 
+# Training Set Loader
 class DataLoaderTrain(Dataset):
-    def __init__(self, rgb_dir, img_options=None):
+    def __init__(self, data_dir, img_options=None):
         super(DataLoaderTrain, self).__init__()
 
-        inp_files = sorted(os.listdir(os.path.join(rgb_dir, 'rain')))
-        tar_files = sorted(os.listdir(os.path.join(rgb_dir, 'norain')))
+        inp_files = sorted(os.listdir(os.path.join(data_dir, 'rain')))
+        tar_files = sorted(os.listdir(os.path.join(data_dir, 'norain')))
 
-        self.inp_filenames = [os.path.join(rgb_dir, 'rain', x) for x in inp_files if is_image_file(x)]
-        self.tar_filenames = [os.path.join(rgb_dir, 'norain', x) for x in tar_files if is_image_file(x)]
+        self.inp_filenames = [os.path.join(data_dir, 'rain', x) for x in inp_files if is_image_file(x)]
+        self.tar_filenames = [os.path.join(data_dir, 'norain', x) for x in tar_files if is_image_file(x)]
 
         self.img_options = img_options
-        self.sizex = len(self.tar_filenames)  # get the size of target
+        self.sizex = len(self.tar_filenames)
 
         self.ps = self.img_options['patch_size']
 
@@ -43,7 +44,6 @@ class DataLoaderTrain(Dataset):
         padw = ps - w if w < ps else 0
         padh = ps - h if h < ps else 0
 
-        # Reflect Pad in case image is smaller than patch_size
         if padw != 0 or padh != 0:
             inp_img = TF.pad(inp_img, (0, 0, padw, padh), padding_mode='reflect')
             tar_img = TF.pad(tar_img, (0, 0, padw, padh), padding_mode='reflect')
@@ -57,7 +57,6 @@ class DataLoaderTrain(Dataset):
         cc = random.randint(0, ww - ps)
         aug = random.randint(0, 8)
 
-        # Crop patch
         inp_img = inp_img[:, rr:rr + ps, cc:cc + ps]
         tar_img = tar_img[:, rr:rr + ps, cc:cc + ps]
 
@@ -89,18 +88,19 @@ class DataLoaderTrain(Dataset):
         return tar_img, inp_img, filename
 
 
+# Validation Set Loader
 class DataLoaderVal(Dataset):
-    def __init__(self, rgb_dir, img_options=None, rgb_dir2=None):
+    def __init__(self, data_dir, img_options=None):
         super(DataLoaderVal, self).__init__()
 
-        inp_files = sorted(os.listdir(os.path.join(rgb_dir, 'rain')))
-        tar_files = sorted(os.listdir(os.path.join(rgb_dir, 'norain')))
+        inp_files = sorted(os.listdir(os.path.join(data_dir, 'rain')))
+        tar_files = sorted(os.listdir(os.path.join(data_dir, 'norain')))
 
-        self.inp_filenames = [os.path.join(rgb_dir, 'rain', x) for x in inp_files if is_image_file(x)]
-        self.tar_filenames = [os.path.join(rgb_dir, 'norain', x) for x in tar_files if is_image_file(x)]
+        self.inp_filenames = [os.path.join(data_dir, 'rain', x) for x in inp_files if is_image_file(x)]
+        self.tar_filenames = [os.path.join(data_dir, 'norain', x) for x in tar_files if is_image_file(x)]
 
         self.img_options = img_options
-        self.sizex = len(self.tar_filenames)  # get the size of target
+        self.sizex = len(self.tar_filenames)
 
         self.ps = self.img_options['patch_size']
 
@@ -117,7 +117,6 @@ class DataLoaderVal(Dataset):
         inp_img = Image.open(inp_path)
         tar_img = Image.open(tar_path)
 
-        # Validate on center crop
         if self.ps is not None:
             inp_img = TF.center_crop(inp_img, (ps, ps))
             tar_img = TF.center_crop(tar_img, (ps, ps))
@@ -130,12 +129,13 @@ class DataLoaderVal(Dataset):
         return tar_img, inp_img, filename
 
 
+# Testing Set Loader
 class DataLoaderTest(Dataset):
-    def __init__(self, inp_dir, img_options):
+    def __init__(self, data_dir, img_options):
         super(DataLoaderTest, self).__init__()
 
-        inp_files = sorted(os.listdir(inp_dir))
-        self.inp_filenames = [os.path.join(inp_dir, x) for x in inp_files if is_image_file(x)]
+        inp_files = sorted(os.listdir(data_dir))
+        self.inp_filenames = [os.path.join(data_dir, x) for x in inp_files if is_image_file(x)]
 
         self.inp_size = len(self.inp_filenames)
         self.img_options = img_options
@@ -152,16 +152,16 @@ class DataLoaderTest(Dataset):
         return inp, filename
 
 
-def get_training_data(rgb_dir, img_options):
-    assert os.path.exists(rgb_dir)
-    return DataLoaderTrain(rgb_dir, img_options)
+def get_training_data(data_dir, img_options):
+    assert os.path.exists(data_dir)
+    return DataLoaderTrain(data_dir, img_options)
 
 
-def get_validation_data(rgb_dir, img_options):
-    assert os.path.exists(rgb_dir)
-    return DataLoaderVal(rgb_dir, img_options)
+def get_validation_data(data_dir, img_options):
+    assert os.path.exists(data_dir)
+    return DataLoaderVal(data_dir, img_options)
 
 
-def get_test_data(rgb_dir, img_options):
-    assert os.path.exists(rgb_dir)
-    return DataLoaderTest(rgb_dir, img_options)
+def get_test_data(data_dir, img_options):
+    assert os.path.exists(data_dir)
+    return DataLoaderTest(data_dir, img_options)

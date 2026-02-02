@@ -1,0 +1,19 @@
+GPU: [0]
+
+VERBOSE: True
+
+OPTIM:
+  BATCH_SIZE: 16
+  NUM_EPOCHS: 250
+  LR_INITIAL: 2e-4
+  LR_MIN: 1e-6
+
+TRAINING:
+  VAL_AFTER_EVERY: 1
+  SAVE_AFTER_EVERY: 10
+  RESUME: True
+  TRAIN_PS: 256
+  VAL_PS: 128
+  TRAIN_DIR: '../dataset/train'
+  VAL_DIR: '../dataset/test/Rain100L'
+  SAVE_DIR: '../result'
