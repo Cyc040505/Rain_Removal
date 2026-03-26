@@ -71,3 +71,9 @@ Under the 'MPRNet' directory
 python model_evaluate.py
 ```
 
+### Launch Deraining Program
+Under the main directory
+```
+python deraining.py
+```
+

@@ -19,7 +19,7 @@ class DerainGUI:
         self.root.title("Image Rain Removal System")
         self.root.state('zoomed')
 
-        model_path = "model/baseline.pth"
+        model_path = "model/opt.pth"
         if not os.path.exists(model_path):
             messagebox.showerror("Error", f"The model weight file was not found: {model_path}\nPlease ensure that the file exists.")
             sys.exit(1)
