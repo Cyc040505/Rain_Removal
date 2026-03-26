@@ -12,7 +12,6 @@ Rain_Streak_Removal/                                     # project directory
 ├── model/                                               # save the model
 ├── evaluate_result/                                     # evaluation result of model
 ├── Hyperparam_Tuning/                                   # Hyperparam tuning experiment(code and result)
-├── Ablation_Result/                                     # Ablation experiment result
 └── README.md                                            # this file 
 ```
 
