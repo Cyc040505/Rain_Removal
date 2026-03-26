@@ -1,0 +1,9 @@
+total_loss_params:
+  char_weight: [1.0]
+  edge_weight: [0.05]
+  freq_weight: [0.01, 0.05, 0.1]
+
+freq_loss_params:
+  amp_weight: [1.0]
+  phase_weight: [0.1, 0.5]
+  consistency_weight: [0.01, 0.05]

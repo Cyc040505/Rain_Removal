@@ -1,0 +1,189 @@
+{
+  "summary": {
+    "total_experiments": 12,
+    "avg_psnr": 28.931075000000003,
+    "max_psnr": 29.0353,
+    "min_psnr": 28.8555
+  },
+  "parameter_importance": [
+    {
+      "parameter": "freq_weight",
+      "correlation": 0.7772555270631739,
+      "abs_correlation": 0.7772555270631739,
+      "trend": "\u6b63\u76f8\u5173"
+    },
+    {
+      "parameter": "freq_phase_weight",
+      "correlation": 0.5026134959858537,
+      "abs_correlation": 0.5026134959858537,
+      "trend": "\u6b63\u76f8\u5173"
+    },
+    {
+      "parameter": "freq_consistency_weight",
+      "correlation": 0.14427933815612345,
+      "abs_correlation": 0.14427933815612345,
+      "trend": "\u6b63\u76f8\u5173"
+    }
+  ],
+  "top_experiments": [
+    {
+      "exp_id": 12,
+      "exp_name": "exp_012_char1.0_edge0.05_freq0.1",
+      "best_psnr": 29.0353,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.1,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.5,
+      "freq_consistency_weight": 0.05
+    },
+    {
+      "exp_id": 11,
+      "exp_name": "exp_011_char1.0_edge0.05_freq0.1",
+      "best_psnr": 29.0319,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.1,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.5,
+      "freq_consistency_weight": 0.01
+    },
+    {
+      "exp_id": 8,
+      "exp_name": "exp_008_char1.0_edge0.05_freq0.05",
+      "best_psnr": 29.0077,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.05,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.5,
+      "freq_consistency_weight": 0.05
+    },
+    {
+      "exp_id": 10,
+      "exp_name": "exp_010_char1.0_edge0.05_freq0.1",
+      "best_psnr": 28.9703,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.1,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.1,
+      "freq_consistency_weight": 0.05
+    },
+    {
+      "exp_id": 7,
+      "exp_name": "exp_007_char1.0_edge0.05_freq0.05",
+      "best_psnr": 28.9625,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.05,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.5,
+      "freq_consistency_weight": 0.01
+    },
+    {
+      "exp_id": 9,
+      "exp_name": "exp_009_char1.0_edge0.05_freq0.1",
+      "best_psnr": 28.9233,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.1,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.1,
+      "freq_consistency_weight": 0.01
+    },
+    {
+      "exp_id": 6,
+      "exp_name": "exp_006_char1.0_edge0.05_freq0.05",
+      "best_psnr": 28.9073,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.05,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.1,
+      "freq_consistency_weight": 0.05
+    },
+    {
+      "exp_id": 3,
+      "exp_name": "exp_003_char1.0_edge0.05_freq0.01",
+      "best_psnr": 28.8789,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.01,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.5,
+      "freq_consistency_weight": 0.01
+    },
+    {
+      "exp_id": 5,
+      "exp_name": "exp_005_char1.0_edge0.05_freq0.05",
+      "best_psnr": 28.8745,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.05,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.1,
+      "freq_consistency_weight": 0.01
+    },
+    {
+      "exp_id": 4,
+      "exp_name": "exp_004_char1.0_edge0.05_freq0.01",
+      "best_psnr": 28.8668,
+      "char_weight": 1.0,
+      "edge_weight": 0.05,
+      "freq_weight": 0.01,
+      "freq_amp_weight": 1.0,
+      "freq_phase_weight": 0.5,
+      "freq_consistency_weight": 0.05
+    }
+  ],
+  "best_experiment": {
+    "exp_id": 12,
+    "exp_name": "exp_012_char1.0_edge0.05_freq0.1",
+    "best_psnr": 29.0353,
+    "char_weight": 1.0,
+    "edge_weight": 0.05,
+    "freq_weight": 0.1,
+    "freq_amp_weight": 1.0,
+    "freq_phase_weight": 0.5,
+    "freq_consistency_weight": 0.05
+  },
+  "parameter_ranges": {
+    "char_weight": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "edge_weight": {
+      "min": 0.05,
+      "max": 0.05,
+      "mean": 0.05000000000000001,
+      "std": 7.247438314304709e-18
+    },
+    "freq_weight": {
+      "min": 0.01,
+      "max": 0.1,
+      "mean": 0.05333333333333334,
+      "std": 0.03845501110112801
+    },
+    "freq_amp_weight": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "freq_phase_weight": {
+      "min": 0.1,
+      "max": 0.5,
+      "mean": 0.3,
+      "std": 0.2088931871468374
+    },
+    "freq_consistency_weight": {
+      "min": 0.01,
+      "max": 0.05,
+      "mean": 0.03,
+      "std": 0.020889318714683743
+    }
+  }
+}

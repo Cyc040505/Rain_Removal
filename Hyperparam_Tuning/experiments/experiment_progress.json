@@ -1,0 +1,194 @@
+[
+    {
+        "exp_id": 1,
+        "exp_name": "exp_001_char1.0_edge0.05_freq0.01",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.01,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.1,
+            "freq_consistency_weight": 0.01
+        },
+        "best_psnr": 28.8589,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_001_char1.0_edge0.05_freq0.01/training_log.txt",
+        "model_dir": "../experiments/exp_001_char1.0_edge0.05_freq0.01"
+    },
+    {
+        "exp_id": 2,
+        "exp_name": "exp_002_char1.0_edge0.05_freq0.01",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.01,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.1,
+            "freq_consistency_weight": 0.05
+        },
+        "best_psnr": 28.8555,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_002_char1.0_edge0.05_freq0.01/training_log.txt",
+        "model_dir": "../experiments/exp_002_char1.0_edge0.05_freq0.01"
+    },
+    {
+        "exp_id": 3,
+        "exp_name": "exp_003_char1.0_edge0.05_freq0.01",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.01,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.5,
+            "freq_consistency_weight": 0.01
+        },
+        "best_psnr": 28.8789,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_003_char1.0_edge0.05_freq0.01/training_log.txt",
+        "model_dir": "../experiments/exp_003_char1.0_edge0.05_freq0.01"
+    },
+    {
+        "exp_id": 4,
+        "exp_name": "exp_004_char1.0_edge0.05_freq0.01",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.01,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.5,
+            "freq_consistency_weight": 0.05
+        },
+        "best_psnr": 28.8668,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_004_char1.0_edge0.05_freq0.01/training_log.txt",
+        "model_dir": "../experiments/exp_004_char1.0_edge0.05_freq0.01"
+    },
+    {
+        "exp_id": 5,
+        "exp_name": "exp_005_char1.0_edge0.05_freq0.05",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.05,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.1,
+            "freq_consistency_weight": 0.01
+        },
+        "best_psnr": 28.8745,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_005_char1.0_edge0.05_freq0.05/training_log.txt",
+        "model_dir": "../experiments/exp_005_char1.0_edge0.05_freq0.05"
+    },
+    {
+        "exp_id": 6,
+        "exp_name": "exp_006_char1.0_edge0.05_freq0.05",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.05,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.1,
+            "freq_consistency_weight": 0.05
+        },
+        "best_psnr": 28.9073,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_006_char1.0_edge0.05_freq0.05/training_log.txt",
+        "model_dir": "../experiments/exp_006_char1.0_edge0.05_freq0.05"
+    },
+    {
+        "exp_id": 7,
+        "exp_name": "exp_007_char1.0_edge0.05_freq0.05",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.05,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.5,
+            "freq_consistency_weight": 0.01
+        },
+        "best_psnr": 28.9625,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_007_char1.0_edge0.05_freq0.05/training_log.txt",
+        "model_dir": "../experiments/exp_007_char1.0_edge0.05_freq0.05"
+    },
+    {
+        "exp_id": 8,
+        "exp_name": "exp_008_char1.0_edge0.05_freq0.05",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.05,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.5,
+            "freq_consistency_weight": 0.05
+        },
+        "best_psnr": 29.0077,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_008_char1.0_edge0.05_freq0.05/training_log.txt",
+        "model_dir": "../experiments/exp_008_char1.0_edge0.05_freq0.05"
+    },
+    {
+        "exp_id": 9,
+        "exp_name": "exp_009_char1.0_edge0.05_freq0.1",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.1,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.1,
+            "freq_consistency_weight": 0.01
+        },
+        "best_psnr": 28.9233,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_009_char1.0_edge0.05_freq0.1/training_log.txt",
+        "model_dir": "../experiments/exp_009_char1.0_edge0.05_freq0.1"
+    },
+    {
+        "exp_id": 10,
+        "exp_name": "exp_010_char1.0_edge0.05_freq0.1",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.1,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.1,
+            "freq_consistency_weight": 0.05
+        },
+        "best_psnr": 28.9703,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_010_char1.0_edge0.05_freq0.1/training_log.txt",
+        "model_dir": "../experiments/exp_010_char1.0_edge0.05_freq0.1"
+    },
+    {
+        "exp_id": 11,
+        "exp_name": "exp_011_char1.0_edge0.05_freq0.1",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.1,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.5,
+            "freq_consistency_weight": 0.01
+        },
+        "best_psnr": 29.0319,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_011_char1.0_edge0.05_freq0.1/training_log.txt",
+        "model_dir": "../experiments/exp_011_char1.0_edge0.05_freq0.1"
+    },
+    {
+        "exp_id": 12,
+        "exp_name": "exp_012_char1.0_edge0.05_freq0.1",
+        "params": {
+            "char_weight": 1.0,
+            "edge_weight": 0.05,
+            "freq_weight": 0.1,
+            "freq_amp_weight": 1.0,
+            "freq_phase_weight": 0.5,
+            "freq_consistency_weight": 0.05
+        },
+        "best_psnr": 29.0353,
+        "status": "SUCCESS",
+        "log_file": "../experiments/exp_012_char1.0_edge0.05_freq0.1/training_log.txt",
+        "model_dir": "../experiments/exp_012_char1.0_edge0.05_freq0.1"
+    }
+]
