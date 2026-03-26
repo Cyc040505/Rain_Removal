@@ -72,6 +72,7 @@ python model_evaluate.py
 ```
 
 ### Launch Deraining Program
+Download model "opt.pth":`https://drive.google.com/drive/folders/1B2tk5v0k2XpHl1h_AdGjg6S0zZYNaIlf?usp=drive_link`  
 Under the main directory
 ```
 python deraining.py
